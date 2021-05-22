@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sitio web oficial de Matias Miro, experto en tecnología, programador y desarrollador web.">
+    <meta name="keywords" content="desarrollo, web, programacion, python, css, html, javascript, coding, programming, book, gaming, e-sports, gamer, tech, tecnologia, technology">
+    <title>Bienvenidos a MatiasMiro.com</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    
+    <main>
+        <!-- NAVEGADOR DEL MENU -->
+        <nav>
+            <div>
+                <ul class="menu" id="content">
+                    <li><a href="quiensoy.html">¿Quien Soy?</a></li>
+                    <li><a href="habilidades.html">Habilidades</a></li>
+                    <li><a href="pasiones.html">Pasiones</a></li>
+                    <li><a href="libro.html">Libro</a></li>
+                    <li><a href="prensa.html">Prensa</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <!-- LOGO DEL MENU -->
+            <div id="logo">
+                <img src="img/firma.png" width="250" height="180">
+            </div>
+        </nav>
+    </main>
+    <a href="#" id="menu_on">
+        <span></span>
+        <span></span>
+        <span></span>
+    </a>
+    <script src="http://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous">
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#menu_on').click(function () {
+                $('body').toggleClass('visible_menu');
+            })
+        });
+    </script>
+</body>
+
+</html>
