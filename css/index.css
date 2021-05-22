@@ -1,0 +1,405 @@
+body {
+    width: 100%;
+    height: 100%;
+    background: #292929;
+    font-family: 'IBM Plex Mono', monospace, arial, helvetica;
+    font-size: 62.5%;
+    color: #E5E5E5;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+
+    }
+
+
+main {
+    width:100%;
+    margin:0 auto;
+}
+
+/* CONTENEDOR LOGO */
+#logo {
+    display: flex;
+    /* border: 1px solid  #FDA10D; */
+    width: 12%;
+    margin-left: 45%;
+    margin-top: -12%;
+    padding: 0;
+    flex: 1 10 10;
+
+}
+
+/* LOGO */
+#logo img {
+    width: 100%;
+    height: auto;
+    /* background-color: black; */
+
+}
+
+main nav {
+    width: 100%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap:nowrap
+
+}
+
+main nav div {
+    /* border: 1px solid  #FDA10D; */
+    width: 100%;
+    margin-top: 0%;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap:wrap;
+}
+
+/* CLASE PADRE MENU FLEXBOX */
+.menu {
+    /* border: 1px solid  #FDA10D; */
+    display: inline-flex;
+    flex-direction: row; 
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin-top: 25%;
+    margin-left: 25%;
+    width:50%;
+    flex-wrap:wrap;
+    flex: 1 10 1;
+}
+
+nav li {
+    flex: 1;
+    border-right: 1px solid #FDA10D;
+    text-align: center;
+    
+}
+
+    /* LINKS DEL MENU */
+ul a {
+    /* border: 1px solid #21fd0d; */
+    text-decoration: none;
+    color: inherit;
+    font-size: 1rem;
+    line-height: 50px;
+    text-align: center;
+}
+
+/* Estilo al pasar mouse por encima*/
+nav li:hover {
+    background-color: #fff;
+    color: rgb(0, 0, 0);
+}
+
+/* RESPONSIVE 768-1920px*/
+@media screen and (min-width:768px ) and (max-width:1500px) {
+    body { background-color: green;  
+    }
+    #logo {
+        position: relative;
+        margin-left: 35%;
+        margin-top: -20%;
+        /* border: 1px solid  #FDA10D; */
+        max-width: 250px;
+    }
+    #logo img {
+        width: 250%;
+        height: auto;
+        /* background-color: black; */
+    
+    }
+
+    #menu_on{
+        display: inline-block;
+        width:30px;
+        height: 20px;
+        top: 0px;
+        bottom: 0px;
+        margin-top: 20px;
+        position: absolute;
+        z-index: 2;                     /* Le da prioridad sobre el menu */
+        border: 1px solid  #FDA10D;
+        
+    }
+    /* BARRA CENTRAL DEL MENU */
+    #menu_on span{
+        width: 100%;
+        height: 4px;
+        border-radius: 4px;
+        display: block;
+        position: absolute;
+        background: #fff;
+        transition: all 0.25s ease; /* Propiedades a animar | Tiempo | Tipo animación*/
+        transform-origin : 0px 100%;
+    }
+        /* BARRA SUPERIOR DEL MENU */
+    #menu_on span:nth-child(2){
+        top: calc(50% - 2px);
+    }
+        /* BARRA BARRA INFERIOR DEL MENU */
+    #menu_on span:nth-child(3){
+    bottom: 0;
+    }
+
+    /* CONFIGURACIÓN DEL MENU */
+
+    .menu {
+        position: relative;
+        top: 0;
+        bottom: 0;
+        left: -300px; /* Esconde menu*/ 
+        width: 300px;
+        z-index: 1;
+        padding: 0;
+        margin: 0;
+        background: #292929;
+        opacity: 1;
+        transition: all 0.75s ease;
+        font-size: 1.2em;
+        overflow-y: auto;
+        flex-direction: column
+    }
+
+    /* CONFIGURACIÓN ESTILOS DE BOTONES */
+
+    nav a{
+        display:block;
+        text-decoration: none;
+        padding: 10px;
+        color: rgba(255,255,255,0.75);
+        border-bottom: 1px solid rgba(255,255,255,0.2);
+        transition: all ease 0.25s;
+        color: inherit;
+    } 
+    nav a:hover{
+        color: rgb(10, 9, 9);
+        border-bottom-color:rgba(255,255,255,0.4);
+    }
+
+    /* ANIMACIÓN BOTON DE MENU Y ACCIÓN DE APARECER */
+    .visible_menu span:nth-child(1){
+        transform: rotate(45deg) translate(-2px,1px); 
+    }
+    .visible_menu span:nth-child(2){
+        opacity: 0;
+    }
+
+    .visible_menu span:nth-child(3){
+        transform: rotate(-45deg) translate(-3px,3px); 
+    }
+    .visible_menu #content{
+        transform: translateX(260px);
+    }
+
+}
+
+/* RESPONSIVE 780px*/
+@media screen and (max-width:768px){
+    body { background-color: rgb(243, 231, 57);  
+    }
+    #logo {
+        position: relative;
+        margin-left: 35%;
+        margin-top: -20%;
+        /* border: 1px solid  #FDA10D; */
+        max-width: 250px;
+    }
+    #logo img {
+        width: 250%;
+        height: auto;
+        /* background-color: black; */
+    
+    }
+
+    #menu_on{
+        display: inline-block;
+        width:30px;
+        height: 20px;
+        top: 0px;
+        bottom: 0px;
+        margin-top: 20px;
+        position: absolute;
+        z-index: 2;                     /* Le da prioridad sobre el menu */
+        border: 1px solid  #FDA10D;
+        
+    }
+    /* BARRA CENTRAL DEL MENU */
+    #menu_on span{
+        width: 100%;
+        height: 4px;
+        border-radius: 4px;
+        display: block;
+        position: absolute;
+        background: #fff;
+        transition: all 0.25s ease; /* Propiedades a animar | Tiempo | Tipo animación*/
+        transform-origin : 0px 100%;
+    }
+        /* BARRA SUPERIOR DEL MENU */
+    #menu_on span:nth-child(2){
+        top: calc(50% - 2px);
+    }
+        /* BARRA BARRA INFERIOR DEL MENU */
+    #menu_on span:nth-child(3){
+    bottom: 0;
+    }
+
+    /* CONFIGURACIÓN DEL MENU */
+
+    .menu {
+        position: relative;
+        top: 0;
+        bottom: 0;
+        left: -300px; /* Esconde menu*/ 
+        width: 300px;
+        z-index: 1;
+        padding: 0;
+        margin: 0;
+        background: #292929;
+        opacity: 1;
+        transition: all 0.75s ease;
+        font-size: 1.2em;
+        overflow-y: auto;
+        flex-direction: column
+    }
+
+    /* CONFIGURACIÓN ESTILOS DE BOTONES */
+
+    nav a{
+        display:block;
+        text-decoration: none;
+        padding: 10px;
+        color: rgba(255,255,255,0.75);
+        border-bottom: 1px solid rgba(255,255,255,0.2);
+        transition: all ease 0.25s;
+        color: inherit;
+    } 
+    nav a:hover{
+        color: rgb(10, 9, 9);
+        border-bottom-color:rgba(255,255,255,0.4);
+    }
+
+    /* ANIMACIÓN BOTON DE MENU Y ACCIÓN DE APARECER */
+    .visible_menu span:nth-child(1){
+        transform: rotate(45deg) translate(-2px,1px); 
+    }
+    .visible_menu span:nth-child(2){
+        opacity: 0;
+    }
+
+    .visible_menu span:nth-child(3){
+        transform: rotate(-45deg) translate(-3px,3px); 
+    }
+    .visible_menu #content{
+        transform: translateX(260px);
+    }
+
+}
+
+/* RESPONSIVE 480px*/
+@media screen and (max-width: 480px){
+    body { background-color: orange;  
+    }
+    #logo {
+        position: relative;
+        margin-left: 35%;
+        margin-top: -20%;
+        /* border: 1px solid  #FDA10D; */
+        max-width: 250px;
+    }
+    #logo img {
+        width: 250%;
+        height: auto;
+        /* background-color: black; */
+    
+    }
+
+    #menu_on{
+        display: inline-block;
+        width:30px;
+        height: 20px;
+        top: 0px;
+        bottom: 0px;
+        margin-top: 20px;
+        position: absolute;
+        z-index: 2;                     /* Le da prioridad sobre el menu */
+        border: 1px solid  #FDA10D;
+        
+    }
+    /* BARRA CENTRAL DEL MENU */
+    #menu_on span{
+        width: 100%;
+        height: 4px;
+        border-radius: 4px;
+        display: block;
+        position: absolute;
+        background: #fff;
+        transition: all 0.25s ease; /* Propiedades a animar | Tiempo | Tipo animación*/
+        transform-origin : 0px 100%;
+    }
+        /* BARRA SUPERIOR DEL MENU */
+    #menu_on span:nth-child(2){
+        top: calc(50% - 2px);
+    }
+        /* BARRA BARRA INFERIOR DEL MENU */
+    #menu_on span:nth-child(3){
+    bottom: 0;
+    }
+
+    /* CONFIGURACIÓN DEL MENU */
+
+    .menu {
+        position: relative;
+        top: 0;
+        bottom: 0;
+        left: -300px; /* Esconde menu*/ 
+        width: 300px;
+        z-index: 1;
+        padding: 0;
+        margin: 0;
+        background: #292929;
+        opacity: 1;
+        transition: all 0.75s ease;
+        font-size: 1.2em;
+        overflow-y: auto;
+        flex-direction: column
+    }
+
+    /* CONFIGURACIÓN ESTILOS DE BOTONES */
+
+    nav a{
+        display:block;
+        text-decoration: none;
+        padding: 10px;
+        color: rgba(255,255,255,0.75);
+        border-bottom: 1px solid rgba(255,255,255,0.2);
+        transition: all ease 0.25s;
+        color: inherit;
+    }
+    
+    nav a:hover{
+        color: rgb(10, 9, 9);
+        border-bottom-color:rgba(255,255,255,0.4);
+    }
+
+    /* ANIMACIÓN BOTON DE MENU Y ACCIÓN DE APARECER */
+    .visible_menu span:nth-child(1){
+        transform: rotate(45deg) translate(-2px,1px); 
+    }
+    
+    .visible_menu span:nth-child(2){
+        opacity: 0;
+    }
+    
+    .visible_menu span:nth-child(3){
+        transform: rotate(-45deg) translate(-3px,3px); 
+    }
+    .visible_menu #content{
+        transform: translateX(260px);
+    }
+
+
+}
