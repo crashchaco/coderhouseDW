@@ -5,6 +5,7 @@ body {
     display: flex;
     flex-direction: column;
 }
+
 /* Estilo para MAIN QUIEN SOY*/
 
 .mainQuien {
@@ -22,121 +23,177 @@ body {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        justify-content:center;
+        justify-content: center;
         width: 100%;
         height: 100%;
-        margin-left:9%;
+        margin-left: 9%;
         margin-right: 9%;
-        margin-top:0;
+        margin-top: 0;
 
     }
 
-/* Fotografía de perfil*/
+    /* Fotografía de perfil*/
 
     #fotografia {
-        // border: 1px solid rgb(202, 16, 162); 
+        height: 68%;
+        width: 50%;
+        border: 1px solid rgb(202, 16, 162);
         margin-top: -7%;
-        padding:0;
+        padding: 0;
         flex: 1 1 0;
         margin-right: 2%;
-        order:1;
+        order: 1;
     }
 
 
-    .mainQuien__contenedorCentral img {
-    /* border: 2px solid rgb(30, 255, 0); */
-    object-fit:contain;
-    width: 100%;
-    /*¨ANIMACIÓN IMAGEN PERFIL*/
-    animation-duration: 3s;
-    animation-name: slidein;
+    .mainQuien__contenedorCentral #fotografia img {
+        border: 2px solid rgb(215, 26, 240);
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        /*¨ANIMACIÓN IMAGEN PERFIL*/
+        animation-duration: 3s;
+        animation-name: slidein;
     }
 }
 
 /* BIOGRAFÍA */
 
-.mainQuien__saludo{
-    // border: 1px solid rgb(0, 238, 255); 
-    height: 67.5%;                                  /* INICIO Estilo como item de .contenedorCentral */
+.mainQuien__saludo {
+    border: 1px solid rgb(0, 238, 255);
+    height: 68%;
+    /* INICIO Estilo como item de .contenedorCentral */
     width: 50%;
-    background-color: orange;                   
-    margin-top: -7%;                                 
-    margin-right: 0;                               /* FIN Estilo como item de .contenedorCentral */
-    display:flex;                                  /* INICIO de Estilo como contenedor */
-    flex: 3;                                        
-    flex-wrap: wrap;                              
-    flex-direction: row;                      
-    align-items:center;  
+    background-color: orange;
+    margin-top: -7%;
+    margin-right: 0;
+    /* FIN Estilo como item de .contenedorCentral */
+    display: flex;
+    /* INICIO de Estilo como contenedor */
+    flex: 3;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
     align-content: flex-start;
-    color: #292929;                            
-    padding-left: 20px;                         
+    color: #292929;
+    padding-left: 20px;
     padding-right: 20px;
-    padding-bottom: 0px;
-    line-height: 100%;                           /* FIN de Estilo como contenedor */
+    padding-bottom: 0;
+    line-height: 100%;
+    /* FIN de Estilo como contenedor */
     order: 2;
-                                                /* ESTILOS PARA TEXTOS BIOGRAFÍA*/
-        h1 {
-        /* border: 1px solid red; */
-        width:20%;
-        height:10%;
+
+    /* ESTILOS PARA TEXTOS BIOGRAFÍA*/
+    h1 {
+        border: 1px solid red;
+        width: 20%;
+        height: 10%;
         font-size: 80px;
         font-weight: bold;
         margin-top: 50px;
         flex: 1 1 100%;
-        
+
         /*¨ANIMACIÓN SALUDO h1*/
         animation-duration: 3s;
         animation-name: slidein;
+
         @keyframes slidein {
             from {
-            margin-left: 100%;
-            width: 300%;
+                margin-left: 100%;
+                width: 300%;
             }
-        
+
             to {
-            margin-left: 0%;
-            width: 100%;
+                margin-left: 0%;
+                width: 100%;
             }
         }
-        
+
         @keyframes slidein {
             from {
-            margin-left: 100%;
-            width: 300%;
+                margin-left: 100%;
+                width: 300%;
             }
-        
+
             to {
-            margin-left: 0%;
-            width: 100%;
+                margin-left: 0%;
+                width: 100%;
             }
         }
-}
-}
+    }
 
-.mainQuien__estiloTextos--texto {
-    // border: 1px solid red;
-    width:100%;
-    height:60%;
-    margin-top: -60px;
-    flex: 0 0 50%;
-    word-spacing: 0;
 
-}
+    .mainQuien__estiloTextos--texto {
+        border: 1px solid red;
+        width: 100%;
+        height: 62%;
+        margin-top: -60px;
+        flex: 0 0 20%;
+        word-spacing: 0;
 
-.mainQuien__estiloRedes--texto {
-    // border: 1px solid red; 
-    width:100%;
-    height:10%;
-    display: flex;
-    text-align:center;
-    font-weight: bold;
-    word-spacing: 30px;
-    margin-top: 50px;
-    padding-top: 0px;
-    flex: 1 1 100%;
-    img {
-        width: $ancho/4;
-        height: $alto/4;
+    }
+
+    .mainQuien__estiloRedes--iconos {
+        border: 1px solid rgb(43, 255, 0);
+        width: 100%;
+        height: 10%;
+        display: flex;
+        align-content: space-between;
+        justify-content: center;
+        margin-top: 15px;
+        padding-top: 0px;
+        padding-right: 10%;
+        flex: 1 1 100%;
+
+        span {
+
+            border: 3px solid rgb(255, 38, 0);
+            width: 100%;
+            height: 100%;
+            margin-right: 5%;
+            margin-left: 10%;
+
+            a {
+                display: flex;
+                justify-content: center;
+                outline: none;
+
+
+                img {
+                    border: 1px solid rgb(89, 0, 255);
+                    width: $ancho/4;
+                    height: $alto/4;
+                }
+            }
+
+            a:link {
+                text-decoration: none;
+                outline: none;
+                outline-style: none;
+                outline-color: orange;
+            }
+
+            a:visited {
+                text-decoration: none;
+                outline: none;
+                outline-style: none;
+                outline-color: orange;
+            }
+
+            a:focus {
+                text-decoration: none;
+                outline: none;
+                outline-style: none;
+                outline-color: orange;
+            }
+
+            a:hover {
+                text-decoration: none;
+                outline: none;
+                outline-style: none;
+                outline-color: orange;
+            }
+        }
     }
 
 }
@@ -153,186 +210,802 @@ body {
     word-spacing: 0;
     margin-bottom: -12px;
 }
+
 .tipeo p:nth-child(1) {
     width: 71.3em;
     -webkit-animation: type 10s steps(40, end);
     animation: type 1s steps(40, end);
-    -webkit-animation-fill-mode:backwards;
+    -webkit-animation-fill-mode: backwards;
     animation-fill-mode: backwards;
     animation-delay: 3s;
 }
+
 .tipeo p:nth-child(2) {
     width: 75em;
     -webkit-animation: type2 10s steps(40, end);
     animation: type2 1s steps(40, end);
-    -webkit-animation-fill-mode:backwards;
+    -webkit-animation-fill-mode: backwards;
     animation-fill-mode: backwards;
     animation-delay: 4s;
 }
+
 .tipeo p:nth-child(3) {
     width: 80em;
     -webkit-animation: type3 10s steps(40, end);
     animation: type3 1s steps(40, end);
-    -webkit-animation-fill-mode:backwards;
+    -webkit-animation-fill-mode: backwards;
     animation-fill-mode: backwards;
     animation-delay: 5s;
 }
+
 .tipeo p:nth-child(4) {
     width: 73em;
     -webkit-animation: type4 10s steps(40, end);
     animation: type4 1s steps(40, end);
-    -webkit-animation-fill-mode:backwards;
+    -webkit-animation-fill-mode: backwards;
     animation-fill-mode: backwards;
     animation-delay: 6s;
 }
+
 .tipeo p:nth-child(5) {
     width: 73em;
     -webkit-animation: type5 10s steps(40, end);
     animation: type5 1s steps(40, end);
-    -webkit-animation-fill-mode:backwards;
+    -webkit-animation-fill-mode: backwards;
     animation-fill-mode: backwards;
     animation-delay: 7s;
 }
 
 @keyframes type {
     0% {
-    width: 0;
+        width: 0;
     }
+
     99.9% {
-    border-right: .15em solid rgb(8, 8, 8);
+        border-right: .15em solid rgb(8, 8, 8);
     }
+
     100% {
-    border: none;
+        border: none;
     }
 }
 
 @-webkit-keyframes type {
     0% {
-    width: 0;
+        width: 0;
     }
-    99.9% {
-    }
+
+    99.9% {}
+
     100% {
-    border: none;
+        border: none;
     }
 }
 
 @keyframes type2 {
     0% {
-    width: 0;
+        width: 0;
     }
+
     1% {
-    opacity: 1;
-    border-right: .15em solid rgb(2, 2, 2);
+        opacity: 1;
+        border-right: .15em solid rgb(2, 2, 2);
     }
+
     99.9% {
-    border-right: .15em solid rgb(2, 2, 2);
+        border-right: .15em solid rgb(2, 2, 2);
     }
+
     100% {
-    opacity: 1;
-    border: none;
+        opacity: 1;
+        border: none;
     }
 }
 
 @-webkit-keyframes type2 {
     0% {
-    width: 0;
+        width: 0;
     }
+
     1% {
-    opacity: 1;
+        opacity: 1;
     }
+
     99.9% {
-    border-right: .15em solid rgb(3, 3, 3);
+        border-right: .15em solid rgb(3, 3, 3);
     }
+
     100% {
-    opacity: 1;
-    border: none;
+        opacity: 1;
+        border: none;
     }
 }
 
 @keyframes type3 {
     0% {
-    width: 0;
+        width: 0;
     }
+
     1% {
-    opacity: 1;
-    border-right: .15em solid rgb(3, 3, 3);
+        opacity: 1;
+        border-right: .15em solid rgb(3, 3, 3);
     }
+
     99.9% {
-    border-right: .15em solid rgb(2, 2, 2);
+        border-right: .15em solid rgb(2, 2, 2);
     }
+
     100% {
-    opacity: 1;
-    border: none;
+        opacity: 1;
+        border: none;
     }
 }
 
 @-webkit-keyframes type3 {
     0% {
-    width: 0;
+        width: 0;
     }
+
     1% {
-    opacity: 1;
+        opacity: 1;
     }
+
     100% {
-    opacity: 1;
+        opacity: 1;
     }
-} 
+}
+
 @keyframes type4 {
     0% {
-    width: 0;
+        width: 0;
     }
+
     1% {
-    opacity: 1;
-    border-right: .15em solid rgb(3, 3, 3);
+        opacity: 1;
+        border-right: .15em solid rgb(3, 3, 3);
     }
+
     99.9% {
-    border-right: .15em solid rgb(2, 2, 2);
+        border-right: .15em solid rgb(2, 2, 2);
     }
+
     100% {
-    opacity: 1;
-    border: none;
+        opacity: 1;
+        border: none;
     }
 }
 
 @-webkit-keyframes type4 {
     0% {
-    width: 0;
+        width: 0;
     }
+
     1% {
-    opacity: 1;
+        opacity: 1;
     }
+
     100% {
-    opacity: 1;
+        opacity: 1;
     }
-} 
+}
+
 @keyframes type5 {
     0% {
-    width: 0;
+        width: 0;
     }
+
     1% {
-    opacity: 1;
-    border-right: .15em solid rgb(3, 3, 3);
+        opacity: 1;
+        border-right: .15em solid rgb(3, 3, 3);
     }
+
     99.9% {
-    border-right: .15em solid rgb(2, 2, 2);
+        border-right: .15em solid rgb(2, 2, 2);
     }
+
     100% {
-    opacity: 1;
-    border: none;
+        opacity: 1;
+        border: none;
     }
 }
 
 @-webkit-keyframes type5 {
     0% {
-    width: 0;
+        width: 0;
     }
+
     1% {
-    opacity: 1;
+        opacity: 1;
     }
+
     100% {
-    opacity: 1;
+        opacity: 1;
     }
-} 
+}
+
+/* RESPONSIVE AÚN POR DEFINIR */
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+
+    body {
+        width: 100%;
+        height: 100%;
+    }
+
+    .mainQuien {
+        border: 1px solid red;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+
+        .mainQuien__contenedorCentral {
+            border: 5px solid rgb(193, 221, 33);
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            margin-left: 0;
+            margin-right: 0;
+            margin-top: 0;
 
 
+
+            #fotografia {
+                height: 68%;
+                width: 100%;
+                border: 1px solid rgb(202, 16, 162);
+                padding: 0;
+                flex: 1 1 0;
+                margin: 0;
+                order: 1;
+            }
+
+
+            .mainQuien__contenedorCentral #fotografia img {
+                border: 2px solid rgb(215, 26, 240);
+                object-fit:cover;
+                width: 100%;
+                height: 100%;
+                /*¨ANIMACIÓN IMAGEN PERFIL*/
+                animation-duration: 3s;
+                animation-name: slidein;
+            }
+
+            .mainQuien__saludo {
+                border: 1px solid rgb(0, 238, 255);
+                height: 100%;
+                /* INICIO Estilo como item de .contenedorCentral */
+                width: 100%;
+                background-color: orange;
+                margin-top: 0;
+                margin-right: 0;
+                /* FIN Estilo como item de .contenedorCentral */
+                display: flex;
+                /* INICIO de Estilo como contenedor */
+                flex: 3;
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-items: center;
+                align-content: flex-start;
+                color: #292929;
+                padding-left: 0;
+                padding-right: 0;
+                padding-bottom: 0;
+                line-height: 100%;
+                /* FIN de Estilo como contenedor */
+                order: 2;
+
+                /* ESTILOS PARA TEXTOS BIOGRAFÍA*/
+                h1 {
+                    border: 1px solid red;
+                    width: 20%;
+                    height: 10%;
+                    font-size: 80px;
+                    font-weight: bold;
+                    margin-top: 50px;
+                    flex: 1 1 100%;
+
+                    /*¨ANIMACIÓN SALUDO h1*/
+                    animation-duration: 3s;
+                    animation-name: slidein;
+
+                    @keyframes slidein {
+                        from {
+                            margin-left: 100%;
+                            width: 300%;
+                        }
+
+                        to {
+                            margin-left: 0%;
+                            width: 100%;
+                        }
+                    }
+
+                    @keyframes slidein {
+                        from {
+                            margin-left: 100%;
+                            width: 300%;
+                        }
+
+                        to {
+                            margin-left: 0%;
+                            width: 100%;
+                        }
+                    }
+                }
+
+
+                .mainQuien__estiloTextos--texto {
+                    border: 1px solid red;
+                    width: 100%;
+                    height: 62%;
+                    margin-top: -60px;
+                    flex: 0 0 20%;
+                    word-spacing: 0;
+
+                }
+
+                .mainQuien__estiloRedes--iconos {
+                    border: 1px solid rgb(43, 255, 0);
+                    width: 100%;
+                    height: 10%;
+                    display: flex;
+                    align-content: space-between;
+                    justify-content: center;
+                    margin-top: 15px;
+                    padding-top: 0px;
+                    padding-right: 10%;
+                    flex: 1 1 100%;
+                }
+            }
+        }
+        .tipeo p {
+
+            font-family: 'IBM Plex Mono', monospace, arial, helvetica;
+            font-size: 15px;
+            white-space:normal;
+            overflow: hidden;
+            word-spacing: 0;
+            margin-bottom: 0;
+        }
+        .tipeo p:nth-child(1) {
+            width: 110em;
+            -webkit-animation: type 10s steps(40, end);
+            animation: type 1s steps(40, end);
+            -webkit-animation-fill-mode: backwards;
+            animation-fill-mode: backwards;
+            animation-delay: 3s;
+        }
+        
+        .tipeo p:nth-child(2) {
+            width: 110em;
+            -webkit-animation: type2 10s steps(40, end);
+            animation: type2 1s steps(40, end);
+            -webkit-animation-fill-mode: backwards;
+            animation-fill-mode: backwards;
+            animation-delay: 4s;
+        }
+        
+        .tipeo p:nth-child(3) {
+            width: 110em;
+            -webkit-animation: type3 10s steps(40, end);
+            animation: type3 1s steps(40, end);
+            -webkit-animation-fill-mode: backwards;
+            animation-fill-mode: backwards;
+            animation-delay: 5s;
+        }
+        
+        .tipeo p:nth-child(4) {
+            width: 110em;
+            -webkit-animation: type4 10s steps(40, end);
+            animation: type4 1s steps(40, end);
+            -webkit-animation-fill-mode: backwards;
+            animation-fill-mode: backwards;
+            animation-delay: 6s;
+        }
+        
+        .tipeo p:nth-child(5) {
+            width: 110em;
+            -webkit-animation: type5 10s steps(40, end);
+            animation: type5 1s steps(40, end);
+            -webkit-animation-fill-mode: backwards;
+            animation-fill-mode: backwards;
+            animation-delay: 7s;
+        }
+    }
+}
+
+
+
+@media screen and (max-width:768px) {
+
+    body {
+        width: 100%;
+        height: 100%;
+    }
+
+    .mainQuien {
+        border: 1px solid red;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+
+        .mainQuien__contenedorCentral {
+            border: 5px solid rgb(193, 221, 33);
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            margin-left: 0;
+            margin-right: 0;
+            margin-top: 0;
+
+
+
+            #fotografia {
+                height: 68%;
+                width: 100%;
+                border: 1px solid rgb(202, 16, 162);
+                padding: 0;
+                flex: 1 1 0;
+                margin: 0;
+                order: 1;
+            }
+
+
+            .mainQuien__contenedorCentral #fotografia img {
+                border: 2px solid rgb(215, 26, 240);
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+                /*¨ANIMACIÓN IMAGEN PERFIL*/
+                animation-duration: 3s;
+                animation-name: slidein;
+            }
+
+            .mainQuien__saludo {
+                border: 1px solid rgb(0, 238, 255);
+                height: 100%;
+                /* INICIO Estilo como item de .contenedorCentral */
+                width: 100%;
+                background-color: orange;
+                margin-top: 0;
+                margin-right: 0;
+                /* FIN Estilo como item de .contenedorCentral */
+                display: flex;
+                /* INICIO de Estilo como contenedor */
+                flex: 3;
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-items: center;
+                align-content: flex-start;
+                color: #292929;
+                padding-left: 0;
+                padding-right: 0;
+                padding-bottom: 0;
+                line-height: 100%;
+                /* FIN de Estilo como contenedor */
+                order: 2;
+
+                /* ESTILOS PARA TEXTOS BIOGRAFÍA*/
+                h1 {
+                    border: 1px solid red;
+                    width: 20%;
+                    height: 10%;
+                    font-size: 80px;
+                    font-weight: bold;
+                    margin-top: 50px;
+                    flex: 1 1 100%;
+
+                    /*¨ANIMACIÓN SALUDO h1*/
+                    animation-duration: 3s;
+                    animation-name: slidein;
+
+                    @keyframes slidein {
+                        from {
+                            margin-left: 100%;
+                            width: 300%;
+                        }
+
+                        to {
+                            margin-left: 0%;
+                            width: 100%;
+                        }
+                    }
+
+                    @keyframes slidein {
+                        from {
+                            margin-left: 100%;
+                            width: 300%;
+                        }
+
+                        to {
+                            margin-left: 0%;
+                            width: 100%;
+                        }
+                    }
+                }
+
+
+                .mainQuien__estiloTextos--texto {
+                    border: 1px solid red;
+                    width: 100%;
+                    height: 62%;
+                    margin-top: -60px;
+                    flex: 0 0 20%;
+                    word-spacing: 0;
+
+                }
+
+                .mainQuien__estiloRedes--iconos {
+                    border: 1px solid rgb(43, 255, 0);
+                    width: 100%;
+                    height: 10%;
+                    display: flex;
+                    align-content: space-between;
+                    justify-content: center;
+                    margin-top: 15px;
+                    padding-top: 0px;
+                    padding-right: 10%;
+                    flex: 1 1 100%;
+                }
+            }
+        }
+        .tipeo p {
+
+            font-family: 'IBM Plex Mono', monospace, arial, helvetica;
+            font-size: 15px;
+            white-space:normal;
+            overflow: hidden;
+            word-spacing: 0;
+            margin-bottom: 0;
+        }
+        .tipeo p:nth-child(1) {
+            width: 50.3em;
+            -webkit-animation: type 10s steps(40, end);
+            animation: type 1s steps(40, end);
+            -webkit-animation-fill-mode: backwards;
+            animation-fill-mode: backwards;
+            animation-delay: 3s;
+        }
+        
+        .tipeo p:nth-child(2) {
+            width: 50em;
+            -webkit-animation: type2 10s steps(40, end);
+            animation: type2 1s steps(40, end);
+            -webkit-animation-fill-mode: backwards;
+            animation-fill-mode: backwards;
+            animation-delay: 4s;
+        }
+        
+        .tipeo p:nth-child(3) {
+            width: 50em;
+            -webkit-animation: type3 10s steps(40, end);
+            animation: type3 1s steps(40, end);
+            -webkit-animation-fill-mode: backwards;
+            animation-fill-mode: backwards;
+            animation-delay: 5s;
+        }
+        
+        .tipeo p:nth-child(4) {
+            width: 50em;
+            -webkit-animation: type4 10s steps(40, end);
+            animation: type4 1s steps(40, end);
+            -webkit-animation-fill-mode: backwards;
+            animation-fill-mode: backwards;
+            animation-delay: 6s;
+        }
+        
+        .tipeo p:nth-child(5) {
+            width: 50em;
+            -webkit-animation: type5 10s steps(40, end);
+            animation: type5 1s steps(40, end);
+            -webkit-animation-fill-mode: backwards;
+            animation-fill-mode: backwards;
+            animation-delay: 7s;
+        }
+    }
+}
+
+@media screen and (max-width: 480px){
+    
+    body {
+        width: 100%;
+        height: 100%;
+    }
+
+    .mainQuien {
+        border: 3px solid rgb(51, 255, 0);
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+
+        .mainQuien__contenedorCentral {
+            border: 5px solid rgb(193, 221, 33);
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            margin-left: 0;
+            margin-right: 0;
+            margin-top: 0;
+
+
+
+            #fotografia {
+                height: 68%;
+                width: 100%;
+                border: 1px solid rgb(202, 16, 162);
+                padding: 0;
+                flex: 1 1 0;
+                margin: 0;
+                order: 1;
+            }
+
+
+            .mainQuien__contenedorCentral #fotografia img {
+                border: 2px solid rgb(215, 26, 240);
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+                /*¨ANIMACIÓN IMAGEN PERFIL*/
+                animation-duration: 3s;
+                animation-name: slidein;
+            }
+
+            .mainQuien__saludo {
+                border: 1px solid rgb(0, 238, 255);
+                height: 100%;
+                /* INICIO Estilo como item de .contenedorCentral */
+                width: 100%;
+                background-color: orange;
+                margin-top: 0;
+                margin-right: 0;
+                /* FIN Estilo como item de .contenedorCentral */
+                display: flex;
+                /* INICIO de Estilo como contenedor */
+                flex: 3;
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-items: center;
+                align-content: flex-start;
+                color: #292929;
+                padding-left: 0;
+                padding-right: 0;
+                padding-bottom: 0;
+                line-height: 100%;
+                /* FIN de Estilo como contenedor */
+                order: 2;
+
+                /* ESTILOS PARA TEXTOS BIOGRAFÍA*/
+                h1 {
+                    border: 1px solid red;
+                    width: 20%;
+                    height: 10%;
+                    font-size: 80px;
+                    font-weight: bold;
+                    margin-top: 50px;
+                    flex: 1 1 100%;
+
+                    /*¨ANIMACIÓN SALUDO h1*/
+                    animation-duration: 3s;
+                    animation-name: slidein;
+
+                    @keyframes slidein {
+                        from {
+                            margin-left: 100%;
+                            width: 300%;
+                        }
+
+                        to {
+                            margin-left: 0%;
+                            width: 100%;
+                        }
+                    }
+
+                    @keyframes slidein {
+                        from {
+                            margin-left: 100%;
+                            width: 300%;
+                        }
+
+                        to {
+                            margin-left: 0%;
+                            width: 100%;
+                        }
+                    }
+                }
+
+
+                .mainQuien__estiloTextos--texto {
+                    border: 1px solid red;
+                    width: 100%;
+                    height: 62%;
+                    margin-top: -60px;
+                    flex: 0 0 20%;
+                    word-spacing: 0;
+
+                }
+
+                .mainQuien__estiloRedes--iconos {
+                    border: 1px solid rgb(43, 255, 0);
+                    width: 100%;
+                    height: 10%;
+                    display: flex;
+                    align-content: space-between;
+                    justify-content: center;
+                    margin-top: 15px;
+                    padding-top: 0px;
+                    padding-right: 10%;
+                    flex: 1 1 100%;
+                }
+            }
+        }
+        .tipeo p {
+
+            font-family: 'IBM Plex Mono', monospace, arial, helvetica;
+            font-size: 15px;
+            white-space:normal;
+            overflow: hidden;
+            word-spacing: 0;
+            margin-bottom: 0;
+        }
+        .tipeo p:nth-child(1) {
+            width: 30em;
+            -webkit-animation: type 10s steps(40, end);
+            animation: type 1s steps(40, end);
+            -webkit-animation-fill-mode: backwards;
+            animation-fill-mode: backwards;
+            animation-delay: 3s;
+        }
+        
+        .tipeo p:nth-child(2) {
+            width: 45em;
+            -webkit-animation: type2 10s steps(40, end);
+            animation: type2 1s steps(40, end);
+            -webkit-animation-fill-mode: backwards;
+            animation-fill-mode: backwards;
+            animation-delay: 4s;
+        }
+        
+        .tipeo p:nth-child(3) {
+            width: 45em;
+            -webkit-animation: type3 10s steps(40, end);
+            animation: type3 1s steps(40, end);
+            -webkit-animation-fill-mode: backwards;
+            animation-fill-mode: backwards;
+            animation-delay: 5s;
+        }
+        
+        .tipeo p:nth-child(4) {
+            width: 45em;
+            -webkit-animation: type4 10s steps(40, end);
+            animation: type4 1s steps(40, end);
+            -webkit-animation-fill-mode: backwards;
+            animation-fill-mode: backwards;
+            animation-delay: 6s;
+        }
+        
+        .tipeo p:nth-child(5) {
+            width: 45em;
+            -webkit-animation: type5 10s steps(40, end);
+            animation: type5 1s steps(40, end);
+            -webkit-animation-fill-mode: backwards;
+            animation-fill-mode: backwards;
+            animation-delay: 7s;
+        }
+    }
+
+}
