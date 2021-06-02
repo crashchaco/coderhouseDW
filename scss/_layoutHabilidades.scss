@@ -5,12 +5,13 @@
 /* CONTENEDORES PADRES */
 
 .contenedorBasePadre {
-    border: 5px solid rgb(0, 255, 0);
+    // border: 5px solid rgb(0, 255, 0);
     /* background-color: rgb(7, 6, 6); */
     width: 100vw;
     height: 225vh;
-    max-width: 90%;
+    max-width: 82%;
     margin: 0 auto;
+    padding-left: 4%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
