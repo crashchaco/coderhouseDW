@@ -110,14 +110,12 @@ body {
   .mainQuien #fotografia {
     height: 68%;
     width: 50%;
-    border: 1px solid #ca10a2;
     margin-top: -7%;
     padding: 0;
     flex: 1 1 0;
     margin-right: 2%;
     order: 1; }
   .mainQuien .mainQuien__contenedorCentral #fotografia img {
-    border: 2px solid #d71af0;
     object-fit: cover;
     width: 100%;
     height: 100%;
@@ -127,7 +125,6 @@ body {
 
 /* BIOGRAFÍA */
 .mainQuien__saludo {
-  border: 1px solid #00eeff;
   height: 68%;
   /* INICIO Estilo como item de .contenedorCentral */
   width: 50%;
@@ -151,7 +148,6 @@ body {
   order: 2;
   /* ESTILOS PARA TEXTOS BIOGRAFÍA*/ }
   .mainQuien__saludo h1 {
-    border: 1px solid red;
     width: 20%;
     height: 10%;
     font-size: 80px;
@@ -178,14 +174,12 @@ body {
     margin-left: 0%;
     width: 100%; } }
   .mainQuien__saludo .mainQuien__Textos--texto {
-    border: 1px solid #750675;
     width: 100%;
     height: 62%;
     margin-top: -60px;
     flex: 0 0 100%;
     word-spacing: 0; }
   .mainQuien__saludo .mainQuien__Redes--iconos {
-    border: 1px solid #2bff00;
     width: 100%;
     height: 10%;
     display: flex;
@@ -196,7 +190,6 @@ body {
     padding-right: 10%;
     flex: 1 1 100%; }
     .mainQuien__saludo .mainQuien__Redes--iconos span {
-      border: 3px solid #ff2600;
       width: 100%;
       height: 100%;
       margin-right: 5%;
@@ -206,7 +199,6 @@ body {
         justify-content: center;
         outline: none; }
         .mainQuien__saludo .mainQuien__Redes--iconos span a img {
-          border: 1px solid #5900ff;
           width: 25px;
           height: 25px; }
       .mainQuien__saludo .mainQuien__Redes--iconos span a:link {
@@ -247,7 +239,6 @@ body {
     padding-top: 0; }
 
 .tipeo p:nth-child(1) {
-  border: solid 1px #f51212;
   width: 100%;
   -webkit-animation: type 10s steps(40, end);
   animation: type 1s steps(40, end);
@@ -280,7 +271,6 @@ body {
   animation-delay: 6s; }
 
 .tipeo p:nth-child(5) {
-  border: solid 1px #f51212;
   width: 100%;
   -webkit-animation: type5 10s steps(40, end);
   animation: type5 1s steps(40, end);
@@ -425,14 +415,12 @@ body {
     .mainQuien #fotografia {
       height: 69%;
       width: 100%;
-      border: 1px solid #ca10a2;
       margin-top: -7%;
       padding: 0;
       flex: 1 1 0;
       margin-right: 2%;
       order: 1; }
     .mainQuien .mainQuien__contenedorCentral #fotografia img {
-      border: 2px solid #d71af0;
       object-fit: cover;
       width: 100%;
       height: 100%;
@@ -441,7 +429,6 @@ body {
       animation-name: slidein; }
   /* BIOGRAFÍA */
   .mainQuien__saludo {
-    border: 1px solid #00eeff;
     height: 68%;
     /* INICIO Estilo como item de .contenedorCentral */
     width: 100%;
@@ -465,7 +452,6 @@ body {
     order: 2;
     /* ESTILOS PARA TEXTOS BIOGRAFÍA*/ }
     .mainQuien__saludo h1 {
-      border: 1px solid red;
       width: 20%;
       height: 10%;
       font-size: 80px;
@@ -490,14 +476,12 @@ body {
       margin-left: 0%;
       width: 100%; } }
     .mainQuien__saludo .mainQuien__Textos--texto {
-      border: 1px solid #750675;
       width: 100%;
       height: 62%;
       margin-top: -60px;
       flex: 0 0 100%;
       word-spacing: 0; }
     .mainQuien__saludo .mainQuien__Redes--iconos {
-      border: 1px solid #2bff00;
       width: 100%;
       height: 10%;
       display: flex;
@@ -509,7 +493,6 @@ body {
       padding-right: 10%;
       flex: 1 1 100%; }
       .mainQuien__saludo .mainQuien__Redes--iconos span {
-        border: 3px solid #ff2600;
         width: 100%;
         height: 100%;
         margin-right: 5%;
@@ -561,7 +544,6 @@ body {
       margin-top: 0;
       padding-top: 0; }
   .tipeo p:nth-child(1) {
-    border: solid 1px #f51212;
     width: 100%;
     -webkit-animation: type 10s steps(40, end);
     animation: type 1s steps(40, end);
@@ -628,14 +610,12 @@ body {
     .mainQuien #fotografia {
       height: 100%;
       width: 100%;
-      border: 1px solid #ca10a2;
       margin-top: -7%;
       padding: 0;
       flex: 1 1 0;
       margin-right: 0;
       order: 1; }
     .mainQuien .mainQuien__contenedorCentral #fotografia img {
-      border: 2px solid #d71af0;
       object-fit: cover;
       width: 100%;
       height: 100%;
@@ -644,7 +624,6 @@ body {
       animation-name: slidein; }
   /* BIOGRAFÍA */
   .mainQuien__saludo {
-    border: 1px solid #00eeff;
     height: 68%;
     /* INICIO Estilo como item de .contenedorCentral */
     width: 100%;
@@ -668,7 +647,6 @@ body {
     order: 2;
     /* ESTILOS PARA TEXTOS BIOGRAFÍA*/ }
     .mainQuien__saludo h1 {
-      border: 1px solid red;
       width: 20%;
       height: 10%;
       font-size: 80px;
@@ -693,14 +671,12 @@ body {
       margin-left: 0%;
       width: 100%; } }
     .mainQuien__saludo .mainQuien__Textos--texto {
-      border: 1px solid #750675;
       width: 100%;
       height: 62%;
       margin-top: -60px;
       flex: 0 0 100%;
       word-spacing: 0; }
     .mainQuien__saludo .mainQuien__Redes--iconos {
-      border: 1px solid #2bff00;
       width: 100%;
       height: 10%;
       display: flex;
@@ -712,7 +688,6 @@ body {
       padding-right: 10%;
       flex: 1 1 100%; }
       .mainQuien__saludo .mainQuien__Redes--iconos span {
-        border: 3px solid #ff2600;
         width: 100%;
         height: 100%;
         margin-right: 5%;
@@ -722,7 +697,6 @@ body {
           justify-content: center;
           outline: none; }
           .mainQuien__saludo .mainQuien__Redes--iconos span a img {
-            border: 1px solid #5900ff;
             width: 25px;
             height: 25px; }
         .mainQuien__saludo .mainQuien__Redes--iconos span a:link {
@@ -761,7 +735,6 @@ body {
       margin-top: 0;
       padding-top: 0; }
   .tipeo p:nth-child(1) {
-    border: solid 1px #f51212;
     width: 100%;
     -webkit-animation: type 10s steps(40, end);
     animation: type 1s steps(40, end);
@@ -790,7 +763,6 @@ body {
     animation-fill-mode: backwards;
     animation-delay: 6s; }
   .tipeo p:nth-child(5) {
-    border: solid 1px #f51212;
     width: 100%;
     -webkit-animation: type5 10s steps(40, end);
     animation: type5 1s steps(40, end);
@@ -824,67 +796,74 @@ body {
     font-size: 15px; }
 
 .frontendPadre {
-  background-color: rgba(229, 229, 229, 0.5);
+  background-color: rgba(229, 229, 229, 0.8);
   grid-area: 1 / 1 / 2 / 2;
   width: 100%;
   height: 100%; }
-  .frontendPadre .frontendPadre:hover {
-    background-color: rgba(229, 229, 229, 0.99);
-    transition: all 1.10s; }
+
+.frontendPadre:hover {
+  background-color: rgba(229, 229, 229, 0.4);
+  transition: all 1.10s; }
 
 .backendPadre {
-  background-color: rgba(253, 161, 13, 0.5);
+  background-color: rgba(253, 161, 13, 0.8);
   grid-area: 1 / 2 / 2 / 4;
   width: 100%;
   height: 100%; }
-  .backendPadre .backendPadre:hover {
-    background-color: rgba(253, 161, 13, 0.99);
-    transition: all 1.10s; }
+
+.backendPadre:hover {
+  background-color: rgba(253, 161, 13, 0.4);
+  transition: all 1.10s; }
 
 .uxuiPadre {
-  background-color: rgba(253, 161, 13, 0.5);
+  background-color: rgba(253, 161, 13, 0.8);
   grid-area: 2 / 1 / 3 / 2;
   width: 100%;
   height: 100%; }
-  .uxuiPadre .uxuiPadre:hover {
-    background-color: rgba(253, 161, 13, 0.99);
-    transition: all 1.10s; }
+
+.uxuiPadre:hover {
+  background-color: rgba(253, 161, 13, 0.4);
+  transition: all 1.10s; }
 
 .databasePadre {
-  background-color: rgba(229, 229, 229, 0.5);
+  background-color: rgba(229, 229, 229, 0.8);
   grid-area: 2 / 2 / 3 / 3;
   width: 100%;
   height: 100%; }
-  .databasePadre .databasePadre:hover {
-    background-color: rgba(229, 229, 229, 0.99);
-    transition: all 1.10s; }
+
+.databasePadre:hover {
+  background-color: rgba(229, 229, 229, 0.4);
+  transition: all 1.10s; }
 
 .comunicacionPadre {
-  background-color: rgba(229, 229, 229, 0.5);
+  background-color: rgba(229, 229, 229, 0.8);
   grid-area: 3 / 1 / 4 / 2;
   width: 100%;
   height: 100%; }
-  .comunicacionPadre .comunicacionPadre:hover {
-    background-color: rgba(229, 229, 229, 0.99);
-    transition: all 1.10s; }
+
+.comunicacionPadre:hover {
+  background-color: rgba(229, 229, 229, 0.4);
+  transition: all 1.10s; }
 
 .itPadre {
-  background-color: rgba(253, 161, 13, 0.5);
+  background-color: rgba(253, 161, 13, 0.8);
   grid-area: 3 / 2 / 4 / 3;
   width: 100%;
   height: 100%; }
-  .itPadre .itPadre:hover {
-    background-color: rgba(253, 161, 13, 0.99);
-    transition: all 1.10s; }
+
+.itPadre:hover {
+  background-color: rgba(253, 161, 13, 0.4);
+  transition: all 1.10s; }
 
 .otrosPadre {
-  background-color: rgba(229, 229, 229, 0.5);
+  background-color: rgba(229, 229, 229, 0.8);
   grid-area: 2 / 3 / 4 / 4;
   width: 100%;
   height: 100%; }
-  .otrosPadre .otrosPadre:hover {
-    background-color: rgba(229, 229, 229, 0.99);
-    transition: all 1.10s; }
+
+.otrosPadre:hover {
+  background-color: rgba(229, 229, 229, 0.4);
+  transition: all 1.10s; }
 
 /* CONTENEDORES HIJOS */
 #frontendHijo {
@@ -920,19 +899,19 @@ body {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
   grid-column-gap: 5%;
-  grid-row-gap: 8%;
+  grid-row-gap: 50%;
   border: 3px dashed rgba(0, 0, 0, 0.2);
   width: 80%;
   margin: 4%;
   padding: 4%;
-  padding-bottom: 40%; }
+  padding-bottom: 60%; }
 
 #databaseHijo {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 5%;
-  grid-row-gap: 8%;
+  grid-row-gap: 30%;
   border: 3px dashed rgba(0, 0, 0, 0.2);
   margin: 5%;
   margin-top: 1%;
@@ -943,34 +922,34 @@ body {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 5%;
-  grid-row-gap: 8%;
+  grid-row-gap: 50%;
   border: 3px dashed rgba(0, 0, 0, 0.2);
   margin: 2%;
   margin-top: 0;
   padding-top: 1%;
-  padding-bottom: 12%; }
+  padding-bottom: 58%; }
 
 #itHijo {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 5%;
-  grid-row-gap: 8%;
+  grid-row-gap: 18%;
   border: 3px dashed rgba(0, 0, 0, 0.2);
   margin: 2%;
   padding-top: 1%;
-  padding-bottom: 12.5%; }
+  padding-bottom: 20%; }
 
 #otrosHijo {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 2%;
-  grid-row-gap: 2%;
+  grid-row-gap: 50%;
   border: 3px dashed rgba(0, 0, 0, 0.2);
   margin: 2%;
   padding: 4%;
-  padding-bottom: 80%; }
+  padding-bottom: 125%; }
 
 /* ITEMS CONTENEDOR HIJO FRONT-END */
 .itemHtml {
@@ -1195,32 +1174,36 @@ body {
   border: 1px solid black;
   width: 90%;
   height: 100%;
-  padding-top: 2%;
-  margin: 2%; }
+  padding-top: -26%;
+  margin: 2%;
+  margin-bottom: -9%; }
 
 .itemPlanificacion {
   grid-area: 1 / 2 / 2 / 3;
   border: 1px solid black;
   width: 90%;
   height: 100%;
-  padding-top: 2%;
-  margin: 2%; }
+  padding-top: -26%;
+  margin: 2%;
+  margin-bottom: -9%; }
 
 .itemProduccion {
   grid-area: 2 / 1 / 3 / 2;
   border: 1px solid black;
   width: 90%;
   height: 100%;
-  padding-top: 2%;
-  margin: 2%; }
+  padding-top: -26%;
+  margin: 2%;
+  margin-bottom: -9%; }
 
 .itemCommunity {
   grid-area: 2 / 2 / 3 / 3;
   border: 1px solid black;
   width: 90%;
   height: 100%;
-  padding-top: 2%;
-  margin: 2%; }
+  padding-top: -26%;
+  margin: 2%;
+  margin-bottom: -9%; }
 
 /* ITEMS CONTENEDOR HIJO IT*/
 .itemHardware {
@@ -1242,14 +1225,16 @@ body {
   border: 1px solid black;
   width: 90%;
   height: 100%;
-  margin: 2%; }
+  margin: 2%;
+  margin-top: 7%; }
 
 .itemRedes {
   grid-area: 2 / 2 / 3 / 3;
   border: 1px solid black;
   width: 90%;
   height: 100%;
-  margin: 2%; }
+  margin: 2%;
+  margin-top: 7%; }
 
 /* ITEMS CONTENEDOR HIJO OTROS*/
 .itemDraw {
@@ -1302,16 +1287,147 @@ body {
   margin-top: 30%; }
 
 /* BARRA DE PROGRESO */
-.barra {
-  border: 1px solid #c02828;
-  height: 1%;
+.barrafront {
+  width: 109%;
+  height: 3%;
+  position: relative;
+  background: rgba(20, 20, 20, 0.2);
+  border-radius: 0px;
+  padding: 1%;
+  padding-left: 1%;
+  padding-right: 2%;
+  margin-bottom: 0;
+  margin-top: -10%;
+  margin-left: -10%; }
+  .barrafront span {
+    display: block;
+    height: 100%;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    background-color: #f7faf6;
+    position: relative;
+    overflow: hidden;
+    animation: prog 2s linear;
+    margin-top: 0px; }
+
+@keyframes prog {
+  0% {
+    width: 0%; }
+  100% {
+    width: 100%; } }
+
+.barraback {
+  height: 2%;
+  position: relative;
+  background: rgba(20, 20, 20, 0.2);
+  border-radius: 0px;
+  padding: 1px;
+  margin-bottom: -24px; }
+  .barraback span {
+    display: block;
+    height: 100%;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    background-color: #f7faf6;
+    position: relative;
+    overflow: hidden;
+    animation: prog 2s linear; }
+
+@keyframes prog {
+  0% {
+    width: 0%; }
+  100% {
+    width: 100%; } }
+
+.barraux {
+  height: 2%;
+  position: relative;
+  background: rgba(20, 20, 20, 0.2);
+  border-radius: 0px;
+  padding: 1px;
+  margin-bottom: -48px; }
+  .barraux span {
+    display: block;
+    height: 100%;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    background-color: #f7faf6;
+    position: relative;
+    overflow: hidden;
+    animation: prog 2s linear; }
+
+@keyframes prog {
+  0% {
+    width: 0%; }
+  100% {
+    width: 100%; } }
+
+.barradata {
+  height: 2%;
+  position: relative;
+  background: rgba(20, 20, 20, 0.2);
+  border-radius: 0px;
+  padding: 1px;
+  margin-bottom: -60px;
+  margin-top: 100px; }
+  .barradata span {
+    display: block;
+    height: 100%;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    background-color: #f7faf6;
+    position: relative;
+    overflow: hidden;
+    animation: prog 2s linear; }
+
+@keyframes prog {
+  0% {
+    width: 0%; }
+  100% {
+    width: 100%; } }
+
+.barracom {
+  height: 2%;
   position: relative;
   background: rgba(20, 20, 20, 0.2);
   border-radius: 0px;
   padding: 3px;
-  margin-bottom: 0px; }
-  .barra span {
-    border: 1px solid #c02828;
+  margin-top: 18%; }
+  .barracom span {
+    display: block;
+    height: 100%;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    background-color: #ffffff;
+    position: relative;
+    overflow: hidden;
+    animation: prog 2s linear; }
+
+@keyframes prog {
+  0% {
+    width: 0%; }
+  100% {
+    width: 100%; } }
+
+.barrait {
+  height: 2%;
+  position: relative;
+  background: rgba(20, 20, 20, 0.2);
+  border-radius: 0px;
+  padding: 3px;
+  margin-bottom: -14%;
+  margin-top: 60%; }
+  .barrait span {
     display: block;
     height: 100%;
     border-top-right-radius: 0px;
@@ -1597,14 +1713,14 @@ body {
   justify-content: space-around; }
   .principal .principal__imagen {
     width: 25%;
-    height: 100%;
+    height: 80%;
     margin-right: 0.5%; }
     .principal .principal__imagen img {
       width: 100%;
       height: 100%; }
   .principal .principal__descripcion {
     width: 80%;
-    height: 100%;
+    height: 80%;
     background-color: orange;
     display: flex;
     flex-direction: column;
