@@ -1,52 +1,51 @@
 /* MIXING DE MEDIDAS Y FLIP*/
 
-@mixin sizes($width, $height){
+@mixin sizes($width, $height) {
     width: $width;
     height: $height;
-    }
-@mixin flip($ancho, $alto,$posicion, $top, $left, $backface-visibility, $-webkit-backface-visibility,){
+}
+
+@mixin flip($ancho, $alto, $posicion, $top, $left, $backface-visibility, $-webkit-backface-visibility, ) {
     width: $ancho;
     height: $alto;
     position: $posicion;
     top: $top;
     left: $left;
-    backface-visibility:$backface-visibility;
+    backface-visibility: $backface-visibility;
     -webkit-backface-visibility: $-webkit-backface-visibility;
 }
 
 /* CONTENIDO PRINCIPAL*/
 
-    .conCentral {
-        @include sizes(80%, 65%);
-        margin-top:2%;
-        margin-left:10%;
-        padding: 0;
-        // border: 1px solid blue;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
+.conCentral {
+    @include sizes(80%, 65%);
+    margin-top: 2%;
+    margin-left: 10%;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
 
     .conCentral__item__tecno {
         @include sizes(24.5%, 100%);
-        // background-color: green;
         order: 3;
         -webkit-perspective: 1500;
         perspective: 1500;
-        
+
         .conCentral__item__tecno__tarjeta {
             @include sizes(100%, 100%);
             position: relative;
             transform-style: preserve-3d;
             transition: 0.4s ease;
-            // box-shadow: 0px 10px 15px -5px rgb(165, 161, 161);
 
-        
-            @each $lado in conCentral__item__tecno__tarjeta--adelante, conCentral__item__tecno__tarjeta--atras {
+            @each $lado in conCentral__item__tecno__tarjeta--adelante,
+            conCentral__item__tecno__tarjeta--atras {
                 .#{$lado} {
-                    @include flip(100%, 100%,absolute, 0, 0, hidden, hidden)
-                        }
-                    }
+                    @include flip(100%, 100%, absolute, 0, 0, hidden, hidden)
+                }
+            }
+
             .conCentral__item__tecno__tarjeta--atras {
                 transform: rotateY(180deg);
                 padding: 0px;
@@ -59,27 +58,27 @@
             }
         }
 
-            }
+    }
 
     .conCentral__item__gaming {
         @include sizes(24.5%, 100%);
-        // background-color: rgb(181, 219, 44);
         order: 2;
         -webkit-perspective: 1500;
         perspective: 1500;
+
         .conCentral__item__gaming__tarjeta {
             @include sizes(100%, 100%);
             position: relative;
             transform-style: preserve-3d;
             transition: 0.4s ease;
-            // box-shadow: 0px 10px 15px -5px rgb(165, 161, 161);
 
-        
-            @each $lado in conCentral__item__gaming__tarjeta--adelante, conCentral__item__gaming__tarjeta--atras {
+            @each $lado in conCentral__item__gaming__tarjeta--adelante,
+            conCentral__item__gaming__tarjeta--atras {
                 .#{$lado} {
-                    @include flip(100%, 100%,absolute, 0, 0, hidden, hidden)
-                        }
-                    }
+                    @include flip(100%, 100%, absolute, 0, 0, hidden, hidden)
+                }
+            }
+
             .conCentral__item__gaming__tarjeta--atras {
                 transform: rotateY(180deg);
                 padding: 0px;
@@ -92,11 +91,10 @@
             }
         }
 
-            }
+    }
 
     .conCentral__item__com {
         @include sizes(24.5%, 100%);
-        // background-color: rgb(221, 72, 240);
         order: 1;
         -webkit-perspective: 1500;
         perspective: 1500;
@@ -106,14 +104,14 @@
             position: relative;
             transform-style: preserve-3d;
             transition: 0.4s ease;
-            // box-shadow: 0px 10px 15px -5px rgb(165, 161, 161);
 
-        
-            @each $lado in conCentral__item__com__tarjeta--adelante, conCentral__item__com__tarjeta--atras {
+            @each $lado in conCentral__item__com__tarjeta--adelante,
+            conCentral__item__com__tarjeta--atras {
                 .#{$lado} {
-                    @include flip(100%, 100%,absolute, 0, 0, hidden, hidden)
-                        }
-                    }
+                    @include flip(100%, 100%, absolute, 0, 0, hidden, hidden)
+                }
+            }
+
             .conCentral__item__com__tarjeta--atras {
                 transform: rotateY(180deg);
                 padding: 0px;
@@ -126,27 +124,27 @@
             }
         }
 
-            }
+    }
 
     .conCentral__item__cocina {
         @include sizes(24.5%, 100%);
-        // background-color: rgb(39, 223, 236);
-        order: 4;   
+        order: 4;
         -webkit-perspective: 1500;
         perspective: 1500;
+
         .conCentral__item__cocina__tarjeta {
             @include sizes(100%, 100%);
             position: relative;
             transform-style: preserve-3d;
             transition: 0.4s ease;
-            // box-shadow: 0px 10px 15px -5px rgb(165, 161, 161);
 
-        
-            @each $lado in conCentral__item__cocina__tarjeta--adelante, conCentral__item__cocina__tarjeta--atras {
+            @each $lado in conCentral__item__cocina__tarjeta--adelante,
+            conCentral__item__cocina__tarjeta--atras {
                 .#{$lado} {
-                    @include flip(100%, 100%,absolute, 0, 0, hidden, hidden)
-                        }
-                    }
+                    @include flip(100%, 100%, absolute, 0, 0, hidden, hidden)
+                }
+            }
+
             .conCentral__item__cocina__tarjeta--atras {
                 transform: rotateY(180deg);
                 padding: 0px;
@@ -159,7 +157,7 @@
             }
         }
 
-            }
+    }
 }
 
 /* ROTACIÓN DE CONTENIDO*/
@@ -184,45 +182,165 @@
 
 }
 
+p {
+    color: #292929;
+}
+
 /* RESPONSIVE AÚN POR DEFINIR */
 
-@media screen and (min-width:768px ) and (max-width:1920px) {
+@media screen and (min-width:768px) and (max-width:1639px) {
 
-    body{
+    body {
         background: #292929;
     }
-}
 
-
-@media screen and (max-width:768px){
-    .conCentral{
-        
-        border: 5px solid rgb(255, 51, 0);
-        background: #292929;
-        width: 100vw;
-        height: auto;
-        max-width: 100%;
-        margin: 0 auto;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-}
-
-
-
-@media screen and (max-width: 480px){
-    
     .conCentral {
-        
-        border: 5px solid rgb(0, 26, 255);
-        background: #292929;
-        width: 100vw;
-        height: auto;
-        max-width: 90%;
-        margin: 0 auto;
+        width: 80vw;
+        height: 100vh;
+        margin-top: 2%;
+        margin-left: 10%;
+        padding: 0;
         display: flex;
         flex-wrap: wrap;
-    
+        justify-content: normal;
+        align-items: center;
+
     }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+}
+
+
+@media screen and (max-width:768px) {
+
+    .conCentral {
+        width: 80vw;
+        height: 100vh;
+        margin-top: 2%;
+        margin-left: 10%;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: normal;
+        align-items: center;
+    }
+
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    p {
+
+        font-size: xx-small;
+    }
+
+}
+
+
+
+
+
+
+@media screen and (max-width: 480px) {
+    .conCentral {
+        width: 80vw;
+        height: 100vh;
+        margin-top: 2%;
+        margin-left: 10%;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: normal;
+        align-items: center;
+    }
+
+    .conCentral__item__tecno__tarjeta {
+        padding: 5%;
+        margin: 5%;
+
+        .conCentral__item__tecno__tarjeta--atras {
+            transform: rotateY(180deg);
+            padding: 5%;
+            margin: 5%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+            background-color: orange;
+        }
+    }
+
+    .conCentral__item__gaming__tarjeta {
+        padding: 5%;
+        margin: 5%;
+
+        .conCentral__item__gaming__tarjeta--atras {
+            transform: rotateY(180deg);
+            padding: 5%;
+            margin: 5%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+            background-color: orange;
+        }
+    }
+
+    .conCentral__item__cocina__tarjeta {
+        padding: 5%;
+        margin: 5%;
+
+        .conCentral__item__cocina__tarjeta--atras {
+            transform: rotateY(180deg);
+            padding: 5%;
+            margin: 5%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+            background-color: orange;
+        }
+    }
+
+    .conCentral__item__com__tarjeta {
+        padding: 5%;
+        margin: 5%;
+
+        .conCentral__item__com__tarjeta--atras {
+            transform: rotateY(180deg);
+            padding: 5%;
+            margin: 5%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+            background-color: orange;
+        }
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    p {
+
+        font-size: xx-small;
+    }
+
 }

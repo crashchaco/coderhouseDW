@@ -9,7 +9,6 @@ body {
 /* Estilo para MAIN QUIEN SOY*/
 
 .mainQuien {
-    /* background-color:blue; */
     width: 100vw;
     height: 225vh;
     display: flex;
@@ -19,7 +18,6 @@ body {
     margin: 0;
 
     .mainQuien__contenedorCentral {
-        /* border: 5px solid rgb(193, 221, 33);     */
         display: flex;
         flex-wrap: wrap;
         align-items: center;
@@ -37,7 +35,6 @@ body {
     #fotografia {
         height: 68%;
         width: 50%;
-        border: 1px solid rgb(202, 16, 162);
         margin-top: -7%;
         padding: 0;
         flex: 1 1 0;
@@ -47,7 +44,6 @@ body {
 
 
     .mainQuien__contenedorCentral #fotografia img {
-        border: 2px solid rgb(215, 26, 240);
         object-fit: cover;
         width: 100%;
         height: 100%;
@@ -60,7 +56,6 @@ body {
 /* BIOGRAFÍA */
 
 .mainQuien__saludo {
-    border: 1px solid rgb(0, 238, 255);
     height: 68%;
     /* INICIO Estilo como item de .contenedorCentral */
     width: 50%;
@@ -85,7 +80,6 @@ body {
 
     /* ESTILOS PARA TEXTOS BIOGRAFÍA*/
     h1 {
-        border: 1px solid red;
         width: 20%;
         height: 10%;
         font-size: 80px;
@@ -124,17 +118,15 @@ body {
 
 
     .mainQuien__Textos--texto {
-        border: 1px solid rgb(117, 6, 117);
         width: 100%;
         height: 62%;
-        margin-top: -60px;
+        margin-top: -20px;
         flex: 0 0 100%;
         word-spacing: 0;
 
     }
 
     .mainQuien__Redes--iconos {
-        border: 1px solid rgb(43, 255, 0);
         width: 100%;
         height: 10%;
         display: flex;
@@ -146,8 +138,6 @@ body {
         flex: 1 1 100%;
 
         span {
-
-            border: 3px solid rgb(255, 38, 0);
             width: 100%;
             height: 100%;
             margin-right: 5%;
@@ -160,7 +150,6 @@ body {
 
 
                 img {
-                    border: 1px solid rgb(89, 0, 255);
                     width: $ancho/4;
                     height: $alto/4;
                 }
@@ -223,7 +212,6 @@ body {
 }
 
 .tipeo p:nth-child(1) {
-    border: solid 1px rgb(245, 18, 18);
     width: 100%;
     -webkit-animation: type 10s steps(40, end);
     animation: type 1s steps(40, end);
@@ -260,7 +248,6 @@ body {
 }
 
 .tipeo p:nth-child(5) {
-    border: solid 1px rgb(245, 18, 18);
     width: 100%;
     -webkit-animation: type5 10s steps(40, end);
     animation: type5 1s steps(40, end);
@@ -452,279 +439,24 @@ body {
 
 @media screen and (min-width:768px) and (max-width:1639px) {
 
-    body {
+    .mainQuien__saludo {
 
-        width: 100%;
-        height: 100%;
+        h1 {
+            margin-top: 4%;
+        }
+
+        .mainQuien__Textos--texto {
+            height: 80%;
+            margin-top: -8%;
+            padding-top: 0;
+
+        }
+
+        .mainQuien__Redes--iconos {
+            height: 10%;
+            margin-top: -12px;
+        }
     }
-        /* Estilo para MAIN QUIEN SOY*/
-
-        .mainQuien {
-            /* background-color:blue; */
-            width: 100%;
-            height: 100%;
-            display: flex;
-
-            flex-wrap: nowrap;
-            align-items: start;
-            margin: 0;
-
-            .mainQuien__contenedorCentral {
-                /* border: 5px solid rgb(193, 221, 33);     */
-                display: flex;
-
-                flex-wrap: nowrap;
-                align-items: center;
-                justify-content: center;
-                width: 100%;
-                height: 100%;
-                margin-left: 0;
-                margin-right: 0;
-                margin-top: 0;
-
-            }
-
-            /* Fotografía de perfil*/
-
-            #fotografia {
-                height: 69%;
-                width: 100%;
-                border: 1px solid rgb(202, 16, 162);
-                margin-top: -7%;
-                padding: 0;
-                flex: 1 1 0;
-                margin-right: 2%;
-                order: 1;
-            }
-
-
-            .mainQuien__contenedorCentral #fotografia img {
-                border: 2px solid rgb(215, 26, 240);
-                object-fit: cover;
-                width: 100%;
-                height: 100%;
-                /*¨ANIMACIÓN IMAGEN PERFIL*/
-                animation-duration: 3s;
-                animation-name: slidein;
-            }
-        }
-
-        /* BIOGRAFÍA */
-
-        .mainQuien__saludo {
-            border: 1px solid rgb(0, 238, 255);
-            height: 68%;
-            /* INICIO Estilo como item de .contenedorCentral */
-            width: 100%;
-            background-color: orange;
-            margin-top: -7%;
-            margin-right: 0;
-            /* FIN Estilo como item de .contenedorCentral */
-            /* INICIO de Estilo como contenedor */
-            display: flex;
-            flex: 3;
-            flex-wrap: wrap;
-            flex-direction: row;
-            align-items: center;
-            align-content: flex-start;
-            color: #292929;
-            padding-left: 0;
-            padding-right: 0;
-            padding-bottom: 0;
-            line-height: 100%;
-            /* FIN de Estilo como contenedor */
-            order: 2;
-
-            /* ESTILOS PARA TEXTOS BIOGRAFÍA*/
-            h1 {
-                border: 1px solid red;
-                width: 20%;
-                height: 10%;
-                font-size: 80px;
-                font-weight: bold;
-                margin-top: 50px;
-                flex: 1 1 100%;
-
-                /*¨ANIMACIÓN SALUDO h1*/
-                animation-duration: 3s;
-                animation-name: slidein;
-
-                @keyframes slidein {
-                    from {
-                        margin-left: 100%;
-                        width: 300%;
-                    }
-
-                    to {
-                        margin-left: 0%;
-                        width: 100%;
-                    }
-                }
-
-                @keyframes slidein {
-                    from {
-                        margin-left: 100%;
-                        width: 300%;
-                    }
-
-                    to {
-                        margin-left: 0%;
-                        width: 100%;
-                    }
-                }
-            }
-
-
-            .mainQuien__Textos--texto {
-                border: 1px solid rgb(117, 6, 117);
-                width: 100%;
-                height: 62%;
-                margin-top: -60px;
-                flex: 0 0 100%;
-                word-spacing: 0;
-
-            }
-
-            .mainQuien__Redes--iconos {
-                border: 1px solid rgb(43, 255, 0);
-                width: 100%;
-                height: 10%;
-                display: flex;
-                align-content: space-between;
-                justify-content: center;
-                margin-top: 20px;
-                padding-bottom: 5px;
-                padding-top: 0px;
-                padding-right: 10%;
-                flex: 1 1 100%;
-
-                span {
-
-                    border: 3px solid rgb(255, 38, 0);
-                    width: 100%;
-                    height: 100%;
-                    margin-right: 5%;
-                    margin-left: 10%;
-                    padding-bottom: 0;
-                    margin-bottom: 0;
-                    padding-top: 2%;
-
-                    a {
-                        display: flex;
-                        justify-content: center;
-                        outline: none;
-
-
-                        img {
-                            border: 1px solid rgb(89, 0, 255);
-                            width: $ancho/4;
-                            height: $alto/4;
-                        }
-                    }
-
-                    a:link {
-                        text-decoration: none;
-                        outline: none;
-                        outline-style: none;
-                        outline-color: orange;
-                    }
-
-                    a:visited {
-                        text-decoration: none;
-                        outline: none;
-                        outline-style: none;
-                        outline-color: orange;
-                    }
-
-                    a:focus {
-                        text-decoration: none;
-                        outline: none;
-                        outline-style: none;
-                        outline-color: orange;
-                    }
-
-                    a:hover {
-                        text-decoration: none;
-                        outline: none;
-                        outline-style: none;
-                        outline-color: orange;
-                    }
-                }
-            }
-
-        }
-
-
-        /*¨ANIMACIÓN PARRAFO BIOGRAFÍA*/
-
-        .tipeo {
-            width: 100%;
-            height: 100%;
-
-
-            p {
-                width: 100%;
-                height: 100%;
-                font-family: 'IBM Plex Mono', monospace, arial, helvetica;
-                font-size: 15px;
-                white-space: normal;
-                overflow: hidden;
-                word-spacing: 0;
-                margin-bottom: -12px;
-                margin-top: 0;
-                padding-top: 0;
-
-
-            }
-
-        }
-
-        .tipeo p:nth-child(1) {
-            border: solid 1px rgb(245, 18, 18);
-            width: 100%;
-            -webkit-animation: type 10s steps(40, end);
-            animation: type 1s steps(40, end);
-            -webkit-animation-fill-mode: backwards;
-            animation-fill-mode: backwards;
-            animation-delay: 3s;
-        }
-
-        .tipeo p:nth-child(2) {
-            width: 100%;
-            -webkit-animation: type2 10s steps(40, end);
-            animation: type2 1s steps(40, end);
-            -webkit-animation-fill-mode: backwards;
-            animation-fill-mode: backwards;
-            animation-delay: 4s;
-        }
-
-        .tipeo p:nth-child(3) {
-            width: 100%;
-            -webkit-animation: type3 10s steps(40, end);
-            animation: type3 1s steps(40, end);
-            -webkit-animation-fill-mode: backwards;
-            animation-fill-mode: backwards;
-            animation-delay: 5s;
-        }
-
-        .tipeo p:nth-child(4) {
-            width: 100%;
-            -webkit-animation: type4 10s steps(40, end);
-            animation: type4 1s steps(40, end);
-            -webkit-animation-fill-mode: backwards;
-            animation-fill-mode: backwards;
-            animation-delay: 6s;
-        }
-
-        .tipeo p:nth-child(5) {
-            border: solid 1px rgb(245, 18, 18);
-            width: 100%;
-            -webkit-animation: type5 10s steps(40, end);
-            animation: type5 1s steps(40, end);
-            -webkit-animation-fill-mode: backwards;
-            animation-fill-mode: backwards;
-            animation-delay: 7s;
-        }
 
 }
 
@@ -732,276 +464,108 @@ body {
 
 
 @media screen and (max-width:879px) {
+    .mainQuien {
 
-    body {
 
-        width: 100%;
-        height: 100%;
-    }
-        /* Estilo para MAIN QUIEN SOY*/
-
-        .mainQuien {
-            /* background-color:blue; */
-            width: 100%;
-            height: 100%;
-            display: flex;
+        .mainQuien__contenedorCentral {
             flex-direction: column;
             flex-wrap: nowrap;
-            align-items: start;
-            margin: 0;
-
-            .mainQuien__contenedorCentral {
-                /* border: 5px solid rgb(193, 221, 33);     */
-                display: flex;
-                flex-direction: column;
-                flex-wrap: nowrap;
-                align-items: center;
-                justify-content: center;
-                width: 100%;
-                height: 100%;
-                margin-left: 0;
-                margin-right: 0;
-                margin-top: 40%;
-
-            }
-
-            /* Fotografía de perfil*/
-
-            #fotografia {
-                height: 100%;
-                width: 100%;
-                border: 1px solid rgb(202, 16, 162);
-                margin-top: -7%;
-                padding: 0;
-                flex: 1 1 0;
-                margin-right: 0;
-                order: 1;
-            }
-
-
-            .mainQuien__contenedorCentral #fotografia img {
-                border: 2px solid rgb(215, 26, 240);
-                object-fit: cover;
-                width: 100%;
-                height: 100%;
-                /*¨ANIMACIÓN IMAGEN PERFIL*/
-                animation-duration: 3s;
-                animation-name: slidein;
-            }
-        }
-
-        /* BIOGRAFÍA */
-
-        .mainQuien__saludo {
-            border: 1px solid rgb(0, 238, 255);
-            height: 68%;
-            /* INICIO Estilo como item de .contenedorCentral */
             width: 100%;
-            background-color: orange;
-            margin-top: -7%;
-            margin-right: 0;
-            /* FIN Estilo como item de .contenedorCentral */
-            /* INICIO de Estilo como contenedor */
-            display: flex;
-            flex: 3;
-            flex-wrap: wrap;
-            flex-direction: row;
-            align-items: center;
-            align-content: flex-start;
-            color: #292929;
-            padding-left: 0;
-            padding-right: 0;
-            padding-bottom: 0;
-            line-height: 100%;
-            /* FIN de Estilo como contenedor */
-            order: 2;
-
-            /* ESTILOS PARA TEXTOS BIOGRAFÍA*/
-            h1 {
-                border: 1px solid red;
-                width: 20%;
-                height: 10%;
-                font-size: 80px;
-                font-weight: bold;
-                margin-top: 50px;
-                flex: 1 1 100%;
-
-                /*¨ANIMACIÓN SALUDO h1*/
-                animation-duration: 3s;
-                animation-name: slidein;
-
-                @keyframes slidein {
-                    from {
-                        margin-left: 100%;
-                        width: 300%;
-                    }
-
-                    to {
-                        margin-left: 0%;
-                        width: 100%;
-                    }
-                }
-
-                @keyframes slidein {
-                    from {
-                        margin-left: 100%;
-                        width: 300%;
-                    }
-
-                    to {
-                        margin-left: 0%;
-                        width: 100%;
-                    }
-                }
-            }
-
-
-            .mainQuien__Textos--texto {
-                border: 1px solid rgb(117, 6, 117);
-                width: 100%;
-                height: 62%;
-                margin-top: -60px;
-                flex: 0 0 100%;
-                word-spacing: 0;
-
-            }
-
-            .mainQuien__Redes--iconos {
-                border: 1px solid rgb(43, 255, 0);
-                width: 100%;
-                height: 10%;
-                display: flex;
-                align-content: space-between;
-                justify-content: center;
-                margin-top: 50px;
-                padding-bottom: 50px;
-                padding-top: 0px;
-                padding-right: 10%;
-                flex: 1 1 100%;
-
-                span {
-
-                    border: 3px solid rgb(255, 38, 0);
-                    width: 100%;
-                    height: 100%;
-                    margin-right: 5%;
-                    margin-left: 10%;
-
-                    a {
-                        display: flex;
-                        justify-content: center;
-                        outline: none;
-
-
-                        img {
-                            border: 1px solid rgb(89, 0, 255);
-                            width: $ancho/4;
-                            height: $alto/4;
-                        }
-                    }
-
-                    a:link {
-                        text-decoration: none;
-                        outline: none;
-                        outline-style: none;
-                        outline-color: orange;
-                    }
-
-                    a:visited {
-                        text-decoration: none;
-                        outline: none;
-                        outline-style: none;
-                        outline-color: orange;
-                    }
-
-                    a:focus {
-                        text-decoration: none;
-                        outline: none;
-                        outline-style: none;
-                        outline-color: orange;
-                    }
-
-                    a:hover {
-                        text-decoration: none;
-                        outline: none;
-                        outline-style: none;
-                        outline-color: orange;
-                    }
-                }
-            }
+            height: 105%;
+            margin-left: 9%;
+            margin-right: 9%;
+            margin-top: 0;
 
         }
 
+        /* Fotografía de perfil*/
 
-        /*¨ANIMACIÓN PARRAFO BIOGRAFÍA*/
-
-        .tipeo {
+        #fotografia {
+            height: 50%;
             width: 100%;
-            height: 100%;
+            margin: 0%;
+            padding: 0;
+        }
+    }
+
+    .mainQuien__saludo {
+        height: 50%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
 
 
-            p {
-                width: 100%;
-                height: 100%;
-                font-family: 'IBM Plex Mono', monospace, arial, helvetica;
-                font-size: 15px;
-                white-space: normal;
-                overflow: hidden;
-                word-spacing: 0;
-                margin-bottom: -12px;
-                margin-top: 0;
-                padding-top: 0;
+        h1 {
+            margin-top: 7%;
+        }
 
-
-            }
+        .mainQuien__Textos--texto {
+            height: 80%;
+            margin-top: -8%;
+            padding-top: 0;
+            padding-bottom: 25%;
 
         }
 
-        .tipeo p:nth-child(1) {
-            border: solid 1px rgb(245, 18, 18);
-            width: 100%;
-            -webkit-animation: type 10s steps(40, end);
-            animation: type 1s steps(40, end);
-            -webkit-animation-fill-mode: backwards;
-            animation-fill-mode: backwards;
-            animation-delay: 3s;
+        .mainQuien__Redes--iconos {
+            height: 10%;
+            margin-top: -45%;
         }
-
-        .tipeo p:nth-child(2) {
-            width: 100%;
-            -webkit-animation: type2 10s steps(40, end);
-            animation: type2 1s steps(40, end);
-            -webkit-animation-fill-mode: backwards;
-            animation-fill-mode: backwards;
-            animation-delay: 4s;
-        }
-
-        .tipeo p:nth-child(3) {
-            width: 100%;
-            -webkit-animation: type3 10s steps(40, end);
-            animation: type3 1s steps(40, end);
-            -webkit-animation-fill-mode: backwards;
-            animation-fill-mode: backwards;
-            animation-delay: 5s;
-        }
-
-        .tipeo p:nth-child(4) {
-            width: 100%;
-            -webkit-animation: type4 10s steps(40, end);
-            animation: type4 1s steps(40, end);
-            -webkit-animation-fill-mode: backwards;
-            animation-fill-mode: backwards;
-            animation-delay: 6s;
-        }
-
-        .tipeo p:nth-child(5) {
-            border: solid 1px rgb(245, 18, 18);
-            width: 100%;
-            -webkit-animation: type5 10s steps(40, end);
-            animation: type5 1s steps(40, end);
-            -webkit-animation-fill-mode: backwards;
-            animation-fill-mode: backwards;
-            animation-delay: 7s;
-        }
-   
+    }
 }
+
+
+
+
+@media screen and (max-width: 480px) {
+    .mainQuien {
+
+        .mainQuien__contenedorCentral {
+            flex-direction: column;
+            flex-wrap: nowrap;
+            width: 100%;
+            height: 105%;
+            margin-left: 9%;
+            margin-right: 9%;
+            margin-top: 0;
+
+        }
+
+        /* Fotografía de perfil*/
+
+        #fotografia {
+            height: 50%;
+            width: 100%;
+            margin: 0%;
+            padding: 0;
+        }
+    }
+
+    .mainQuien__saludo {
+        height: 50%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+
+
+        h1 {
+            border: 1px solid red;
+            margin-top: 10%;
+        }
+
+        .mainQuien__Textos--texto {
+            height: 80%;
+            margin-top: -15%;
+            padding-top: 0;
+            padding-bottom: 25%;
+
+        }
+
+        .mainQuien__Redes--iconos {
+            height: 10%;
+            margin-top: -40%;
+        }
+    }
+}
+
+
