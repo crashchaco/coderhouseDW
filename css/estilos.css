@@ -1,7 +1,6 @@
 @charset "UTF-8";
 /* ESTILO HEADER */
 .cabezera {
-  /* background-color: red; */
   width: 100%;
   height: 20vh;
   display: flex;
@@ -10,7 +9,6 @@
   flex-wrap: wrap;
   /* ESTILO nav y div */ }
   .cabezera nav {
-    /* border: 1px solid rgb(22, 189, 22); */
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -20,8 +18,6 @@
     margin-right: 9%;
     order: 2; }
     .cabezera nav div {
-      /* border: 1px solid white; */
-      /* background-color:black; */
       margin: 0;
       padding: 0;
       height: 20px;
@@ -35,7 +31,6 @@
     .cabezera nav a img:hover {
       background-color: white; }
     .cabezera nav a:hover {
-      /* Estilo al pasar mouse por encima*/
       background-color: #fff;
       color: #080808; }
 
@@ -50,7 +45,6 @@ a:active {
 
 /* ESTILO LOGO */
 .cabezera__logo {
-  /* border: 1px solid white; */
   width: auto;
   height: auto;
   flex: 0.2;
@@ -66,6 +60,56 @@ a:active {
     padding-top: 10%;
     padding-left: 10px;
     object-fit: cover; }
+
+@media screen and (min-width: 768px) and (max-width: 1500px) {
+  .cabezera {
+    margin-bottom: 3%; }
+    .cabezera nav {
+      margin-left: 0;
+      margin-top: 1%;
+      margin-right: 0%; }
+      .cabezera nav div {
+        height: 35px; }
+      .cabezera nav a img {
+        margin-top: 6px; }
+  .cabezera__logo {
+    margin-top: -2%;
+    padding-bottom: 20px;
+    order: 1; } }
+
+@media screen and (max-width: 768px) {
+  .cabezera {
+    margin-bottom: 15%; }
+    .cabezera nav {
+      flex-direction: column;
+      margin-left: -30%;
+      margin-top: 1%;
+      margin-right: 0%; }
+      .cabezera nav div {
+        height: 25px; }
+      .cabezera nav a img {
+        visibility: hidden; }
+  .cabezera__logo {
+    margin-top: -15%;
+    padding-bottom: 20px;
+    order: 1; } }
+
+@media screen and (max-width: 480px) {
+  .cabezera {
+    margin-bottom: 3%; }
+    .cabezera nav {
+      flex-direction: column;
+      margin-left: -30%;
+      margin-top: 1%;
+      margin-right: 0%; }
+      .cabezera nav div {
+        height: 20px; }
+      .cabezera nav a img {
+        visibility: hidden; }
+  .cabezera__logo {
+    margin-top: -15%;
+    padding-bottom: 0;
+    order: 1; } }
 
 footer {
   border-top: 1px solid #FDA10D;
@@ -1133,7 +1177,6 @@ body {
   100% {
     width: 100%; } }
 
-/* RESPONSIVE AÚN POR DEFINIR */
 @media screen and (min-width: 768px) and (max-width: 1639px) {
   .contenedorBasePadre {
     width: 100vw;
@@ -1253,7 +1296,7 @@ body {
     padding: 3px;
     margin-bottom: -11%;
     margin-top: 60%; }
-  /* ITEMS CONTENEDOR HIJO COMUNICACION*/
+  /* ITEM CONTENEDOR HIJO COMUNICACION*/
   .itemIngles {
     width: 90%;
     height: 100%;
@@ -1590,15 +1633,14 @@ p {
     .principal .principal__descripcion h1 {
       margin-top: 5%; }
 
-/* RESPONSIVE - revisar wrap*/
 @media screen and (min-width: 768px) and (max-width: 1639px) {
   .principal {
-    border: 5px solid #ff3300;
     background: #292929;
     width: 100vw;
     height: auto;
     max-width: 100%;
     margin: 0 auto;
+    margin-top: 5%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between; }
@@ -1609,7 +1651,6 @@ p {
         width: 100%;
         height: 100%; }
     .principal .principal__descripcion {
-      border: 1px solid red;
       width: 100%;
       height: 150%;
       padding-bottom: 10%;
@@ -1618,12 +1659,12 @@ p {
 
 @media screen and (max-width: 768px) {
   .principal {
-    border: 5px solid #ff3300;
     background: #292929;
     width: 100vw;
     height: auto;
     max-width: 100%;
     margin: 0 auto;
+    margin-top: 5%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between; }
@@ -1634,7 +1675,6 @@ p {
         width: 100%;
         height: 100%; }
     .principal .principal__descripcion {
-      border: 1px solid red;
       width: 100%;
       height: 150%;
       padding-bottom: 10%;
@@ -1643,12 +1683,12 @@ p {
 
 @media screen and (max-width: 480px) {
   .principal {
-    border: 5px solid #ff3300;
     background: #292929;
     width: 100vw;
     height: auto;
     max-width: 100%;
     margin: 0 auto;
+    margin-top: 5%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between; }
@@ -1659,7 +1699,6 @@ p {
         width: 100%;
         height: 100%; }
     .principal .principal__descripcion {
-      border: 1px solid red;
       width: 100%;
       height: 150%;
       padding-bottom: 10%;
@@ -1745,6 +1784,7 @@ button:hover {
 .formulario span {
   margin: 22px 60px 0 35px; }
 
+/* BOTON WHATSAPP - BOOSTRAP */
 .btn-primary {
   background: orange;
   border: 1px solid orange;
