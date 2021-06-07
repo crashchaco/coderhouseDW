@@ -20,7 +20,6 @@ main {
 /* CONTENEDOR LOGO */
 #logo {
     display: flex;
-    /* border: 1px solid  #FDA10D; */
     width: 12%;
     margin-left: 45%;
     margin-top: -12%;
@@ -33,8 +32,6 @@ main {
 #logo img {
     width: 100%;
     height: auto;
-    /* background-color: black; */
-
 }
 
 main nav {
@@ -47,7 +44,6 @@ main nav {
 }
 
 main nav div {
-    /* border: 1px solid  #FDA10D; */
     width: 100%;
     margin-top: 0%;
     display:flex;
@@ -59,7 +55,6 @@ main nav div {
 
 /* CLASE PADRE MENU FLEXBOX */
 .menu {
-    /* border: 1px solid  #FDA10D; */
     display: inline-flex;
     flex-direction: row; 
     justify-content: center;
@@ -81,7 +76,6 @@ nav li {
 
     /* LINKS DEL MENU */
 ul a {
-    /* border: 1px solid #21fd0d; */
     text-decoration: none;
     color: inherit;
     font-size: 1rem;
@@ -89,7 +83,6 @@ ul a {
     text-align: center;
 }
 
-/* Estilo al pasar mouse por encima*/
 nav li:hover {
     background-color: #fff;
     color: rgb(0, 0, 0);
@@ -97,20 +90,16 @@ nav li:hover {
 
 /* RESPONSIVE 768-1500x*/
 @media screen and (min-width:768px ) and (max-width:1500px) {
-    body { background-color: green;  
-    }
+
     #logo {
         position: relative;
         margin-left: 35%;
         margin-top: -20%;
-        /* border: 1px solid  #FDA10D; */
         max-width: 250px;
     }
     #logo img {
         width: 250%;
         height: auto;
-        /* background-color: black; */
-    
     }
 
     #menu_on{
@@ -199,20 +188,16 @@ nav li:hover {
 
 /* RESPONSIVE 780px*/
 @media screen and (max-width:768px){
-    body { background-color: rgb(243, 231, 57);  
-    }
+
     #logo {
         position: relative;
         margin-left: 35%;
         margin-top: -20%;
-        /* border: 1px solid  #FDA10D; */
         max-width: 250px;
     }
     #logo img {
         width: 250%;
         height: auto;
-        /* background-color: black; */
-    
     }
 
     #menu_on{
@@ -301,20 +286,16 @@ nav li:hover {
 
 /* RESPONSIVE 480px*/
 @media screen and (max-width: 480px){
-    body { background-color: orange;  
-    }
+
     #logo {
         position: relative;
         margin-left: 35%;
         margin-top: -20%;
-        /* border: 1px solid  #FDA10D; */
         max-width: 250px;
     }
     #logo img {
         width: 250%;
         height: auto;
-        /* background-color: black; */
-    
     }
 
     #menu_on{
