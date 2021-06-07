@@ -494,15 +494,16 @@ body {
     margin: 0;
     padding: 0; }
     .mainQuien__saludo h1 {
-      margin-top: 7%; }
+      border: 1px solid red;
+      margin-top: 10%; }
     .mainQuien__saludo .mainQuien__Textos--texto {
       height: 80%;
-      margin-top: -8%;
+      margin-top: -15%;
       padding-top: 0;
       padding-bottom: 25%; }
     .mainQuien__saludo .mainQuien__Redes--iconos {
       height: 10%;
-      margin-top: -45%; } }
+      margin-top: -40%; } }
 
 /* CONTENEDORES PADRES */
 .contenedorBasePadre {
@@ -1815,6 +1816,24 @@ button:hover {
 
 #whatsappModal {
   border: 5px solid orange; }
+
+@media screen and (max-width: 480px) {
+  .contenedorPrincipal__formulario {
+    width: 480px;
+    height: 440px;
+    background: #e6e6e6;
+    border-radius: 8px;
+    box-shadow: 0 0 40px -10px orange;
+    margin-top: -20%;
+    margin-bottom: 50%;
+    padding: 20px 30px;
+    max-width: calc(100vw - 40px);
+    box-sizing: border-box;
+    font-family: 'IBM Plex Mono', monospace, arial, helvetica;
+    position: relative; }
+  .btn {
+    margin-top: -40%;
+    margin-right: 30%; } }
 
 body {
   width: 100%;
