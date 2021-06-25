@@ -1785,6 +1785,10 @@ button:hover {
 .formulario span {
   margin: 22px 60px 0 35px; }
 
+.modal-body a img {
+  width: 350px;
+  height: 350px; }
+
 /* BOTON WHATSAPP - BOOSTRAP */
 .btn-primary {
   background: orange;
